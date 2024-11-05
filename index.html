@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Enhanced Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <img src="./home.png" alt="Profile Picture" class="profile-pic">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm an aspiring front-end developer passionate about crafting clean, responsive, and interactive web applications.</p>
+    </header>
+    
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a dedicated, eager learner with intermediate skills in Java, Python, HTML, CSS, and JavaScript, looking for hands-on experience in Web development.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>React</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Project 1: Responsive Website</h3>
+                <p>A fully responsive website built with HTML, CSS, and JavaScript.</p>
+                <a onclick="openModal('modal1')">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2: Interactive Web App</h3>
+                <p>An interactive web application developed with JavaScript and React.</p>
+                <a onclick="openModal('modal2')">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Interested in collaborating or have questions? Reach out via email!</p>
+        <a href="mailto:your-email@example.com">Email Me</a>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Project 1: Responsive Website</h2>
+            <p>Details about the responsive website project...</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Project 2: Interactive Web App</h2>
+            <p>Details about the interactive web application project...</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
